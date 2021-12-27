@@ -10,6 +10,9 @@ dotenv.config();
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.send("server connected");
+});
 app.use("/", router);
 
 //listen for requestc
