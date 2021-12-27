@@ -14,7 +14,7 @@ app.use("/", router);
 
 //listen for requestc
 
-app.listen(process.env.port || 4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("now listing 4000");
 });
 
