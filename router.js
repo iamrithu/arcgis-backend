@@ -55,7 +55,11 @@ router.delete("/geolocation/:id", (req, res) => {
 });
 //delete all
 router.delete("/clear", async (req, res) => {
-  await Location.deleteMany({});
+  try {
+    await Location.deleteMany({});
+  } catch (error) {
+    console.log(error);
+  }
 });
 //--------------------------
 

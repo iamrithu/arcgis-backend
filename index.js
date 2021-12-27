@@ -23,8 +23,8 @@ app.listen(process.env.port || 4000, () => {
 const mongoose = require("mongoose");
 
 mongoose.connect(
-  process.env.MONGODB_URL,
-  //   "mongodb+srv://iamrithi:iamrithi333@cluster0.gdtlt.mongodb.net/GEOCODE?retryWrites=true&w=majority",
+  process.env.MONGODB_URL ||
+    "mongodb+srv://iamrithi:iamrithi333@cluster0.gdtlt.mongodb.net/GEOCODE?retryWrites=true&w=majority",
   () => {
     console.log("DB connected !!!");
   }
