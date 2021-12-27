@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("server connected");
+  res.status(200).send("server connected");
 });
 app.use("/", router);
 
