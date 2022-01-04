@@ -27,7 +27,7 @@ const mongoose = require("mongoose");
 
 mongoose.connect(
   process.env.MONGODB_URL ||
-    "mongodb+srv://iamrithi:iamrithi333@cluster0.gdtlt.mongodb.net/GEOCODE?retryWrites=true&w=majority",
+    "mongodb+srv://iamrithi:iamrithi2029@cluster0.kkg7m.mongodb.net/acGIS?retryWrites=true&w=majority",
   () => {
     console.log("DB connected !!!");
   }
